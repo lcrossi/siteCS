@@ -129,7 +129,6 @@
         background-color: #16558B;
         display: flex;
         justify-content: space-around;
-        display:flex;
         flex-direction: column;
     }
 
