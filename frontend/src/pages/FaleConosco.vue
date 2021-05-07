@@ -1,6 +1,8 @@
 <template>
     <div>
         <head>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <link rel="icon" href="./images/Unificado1.png">
             <title>Fale Conosco</title>
         </head>
         <body>
@@ -46,7 +48,36 @@
                 <div class = "linha_proj"></div>
                 <div class = "titulo_proj">Venha nos visitar</div> 
                 <br>
-                
+                <div style="margin-bottom: 10vh; display: flex;">
+                    <div style="width: 60vw; display: grid; grid-template-columns: 100%;">
+                        <div style="height: 5vh; display: flex; align-items: center;">
+                            <i class="material-icons">phone</i>
+                            <p>Endereço da FEG</p>
+                        </div>
+                        <div style="height: 5vh; display: flex; align-items: center;">
+                            <i class="material-icons">phone</i>
+                            <p>Telefone de Alguém (não do Seq)</p>
+                        </div>
+                        <div style="height: 5vh; display: flex; align-items: center;">
+                            <i class="material-icons">phone</i>
+                            <p>Email de contato</p>
+                        </div>
+                        <div style="height: 5vh; display: flex; align-items: center;">
+                            <i class="material-icons">phone</i>
+                            <p>Horário de Funcionamento</p>
+                        </div>
+                    </div>
+                    <img src="../assets/FaleConosco_assets/logo CS.png" />
+                </div>
+                <div style="display: grid; grid-template-columns: 100%; width: 90vw; align-items: center; justify-items: center;">
+                    <img src="../assets/FaleConosco_assets/logo CS.png" />
+                    <div style="display: flex; align-items: center;">
+                        <a href="https://www.linkedin.com/company/ieee-computer-society-guaratingueta/"><i class="material-icons">phone</i></a>
+                        <a href="https://www.instagram.com/cs_guara/"><i class="material-icons">phone</i></a>
+                        <a href="https://www.facebook.com/CSGUARATINGUETA/"><i class="material-icons">phone</i></a>
+                        <a href="https://www.youtube.com/channel/UCQbb5m7b-NdF8EX7Se6BANw"><i class="material-icons">phone</i></a>
+                    </div>
+                </div>
 
                 </div>
             </section>
