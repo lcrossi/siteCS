@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="./img/cvimg.png">
+    <title>Teste pro Site da CS</title>
+</head>
+
+<body style="background-color: #16558B;">
+
+    <section style="margin-bottom: 10vh;">
+        <div>Entre em contato conosco</div>
+        <div style="width: 60vw; display: grid; grid-template-columns: 40% 40%;">
+            <div class="FaleConoscoComponent">
+                <p>Nome:</p>
+                <input id="FaleConoscoNome" type="text" placeholder="ex: Fernando"/>
+            </div>
+            <div class="FaleConoscoComponent">
+                <p>Sobrenome:</p>
+                <input id="FaleConoscoSobrenome" type="text" placeholder="ex: Zagatto Penha"/>
+            </div>
+            <div class="FaleConoscoComponent">
+                <p>Instituição / Empresa:</p>
+                <input id="FaleConoscoInstituicao" type="text" placeholder="ex: IEEE CS - Guaratinguetá"/>
+            </div>
+            <div class="FaleConoscoComponent">
+                <p>E-mail:</p>
+                <input id="FaleConoscoEmail" type="text" placeholder="ex: IEEE CS - Guaratinguetá"/>
+            </div>
+            <div class="FaleConoscoComponent" style="grid-column: span 2;">
+                <p>Descrição do Projeto e Instituição:</p>
+                <input id="FaleConoscoEmail" type="text" placeholder="ex: IEEE CS - Guaratinguetá"/>
+            </div>
+            <textarea rows="3"> </textarea>
+        </div>
+    </section>
+
+</body>
+
+<style>
+    html {
+        color: #ffffff;
+    }
+
+    input {
+        background-color: transparent;
+        border-color: transparent;
+        border-bottom: 1.5px orange solid !important;
+        width: inherit;
+        color: #ffffff;
+    }
+
+    ::placeholder {
+        color: lightgray;
+    }
+
+    .FaleConoscoComponent {
+        width: 90%;
+    }
+</style>
+</html>
