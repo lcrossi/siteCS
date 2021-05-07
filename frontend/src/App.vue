@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Home />
+    <Sobre />
   </div>
 </template>
 
 <script>
-import Home from './pages/Home'
+import Home from './pages/Home';
+import Sobre from './pages/Sobre'
 
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    Sobre
   }
 }
 </script>
