@@ -4,13 +4,13 @@
             <title>Fale Conosco</title>
         </head>
         <body>
-            <section>
+            <section style="display: flex;">
                 <div class="container_sobre">
                     <div class="sobre_sec1">
                     <br/>
                         <div class="linha_sec1"></div>
                         <div class="sobre_sec1_titulo">Entre em contato conosco</div>
-                        <div style="width: 70vw; display: grid; grid-template-columns: 40% 40%;">
+                        <div style="width: 55vw; display: grid; grid-template-columns: 50% 50%;">
                         <div class="FaleConoscoComponent">
                             <p>Nome:</p>
                             <input id="FaleConoscoNome" type="text" placeholder="ex: Fernando"/>
@@ -34,12 +34,22 @@
                     </div>
                     </div>
                 </div>
+                <div>
+                    <img class="intersectionImg" src="../assets/FaleConosco_assets/Intersect (forma amarela).png">
+                </div>
             </section>
             
-            <section>
+            <section> 
+
+                <div class = "container_proj">
+                <br>
+                <div class = "linha_proj"></div>
+                <div class = "titulo_proj">Venha nos visitar</div> 
+                <br>
+                
+
+                </div>
             </section>
-
-
         </body>
     </div>
 </template>
@@ -71,6 +81,12 @@ export default {
     .FaleConoscoComponent {
         width: 90%;
         padding-bottom: 10vh;
+    }
+
+    .intersectionImg {
+        height: 100%;
+        width: 100%;
+        background-color: #16558B;
     }
  
 </style>
