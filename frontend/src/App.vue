@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <Home />
+    <Sobre />
+    <FaleConosco />
   </div>
 </template>
 
 <script>
-import Home from './pages/Home'
+import Home from './pages/Home';
+import Sobre from './pages/Sobre';
+import FaleConosco from './pages/FaleConosco';
 
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    Sobre,
+    FaleConosco
   }
 }
 </script>
