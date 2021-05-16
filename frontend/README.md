@@ -23,7 +23,6 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-
 ### Categorias de Commit ###
     build - Build related changes
     ci - CI related changes

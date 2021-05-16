@@ -26,7 +26,7 @@ export default {
   font-family: Modulus-Bold, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 @font-face{

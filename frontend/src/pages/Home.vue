@@ -41,11 +41,10 @@
                 </div>
             </section>
             <section>
-                <div class="home_sec2">
-                    <div class="home_sec2_topo">
-                        <br/>
-                        <div class="home_sec2_linha"></div>
-                        <div class="home_sec2_titulo">O que fazemos</div>
+                <div class = "container_white">
+                <br>
+                <div class = "linha_proj"></div>
+                <div class = "titulo_proj">Destaque de alguns trabalhos</div> 
                         <div class="home_sec2_conteudo">
                             <div class="home_sec2_conteudo1">
                                 <p>
@@ -83,7 +82,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         </body>
     </div>
@@ -106,6 +104,7 @@ export default {
         width: 100%;
         color: #FFFFFF;
         background-color: #4E98D0;
+        position: fixed;
     }
 
     .conteudo_barra{
@@ -162,7 +161,6 @@ export default {
     }
 
     .home_sec2_titulo{
-        margin-top: 10px;
         margin-bottom: 50px;
     }
 
