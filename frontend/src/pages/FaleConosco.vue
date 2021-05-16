@@ -136,6 +136,7 @@ export default {
         background-image: url('../assets/FaleConosco_assets/Intersect (forma amarela).png');
         background-repeat: no-repeat;
         background-position: right;
+        background-size: 40%
     }
  
 </style>
