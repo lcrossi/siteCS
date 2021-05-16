@@ -9,34 +9,38 @@
     <title>Teste pro Site da CS</title>
 </head>
 
-<body style="background-color: #16558B;">
-
-    <section style="margin-bottom: 10vh;">
-        <div>Entre em contato conosco</div>
-        <div style="width: 60vw; display: grid; grid-template-columns: 40% 40%;">
-            <div class="FaleConoscoComponent">
-                <p>Nome:</p>
-                <input id="FaleConoscoNome" type="text" placeholder="ex: Fernando"/>
+<body style="background-color: #fff;">
+    <div>Entre em contato conosco</div>
+    <div style="margin-bottom: 10vh; display: flex;">
+        <div style="width: 60vw; display: grid; grid-template-columns: 100%;">
+            <div style="height: 5vh; display: flex; align-items: center;">
+                <img src="../assets/FaleConosco_assets/bytesize_location.png"/>
+                <p>Endereço da FEG</p>
             </div>
-            <div class="FaleConoscoComponent">
-                <p>Sobrenome:</p>
-                <input id="FaleConoscoSobrenome" type="text" placeholder="ex: Zagatto Penha"/>
+            <div style="height: 5vh; display: flex; align-items: center;">
+                <img src="../assets/FaleConosco_assets/bx_bxl-whatsapp.png"/>
+                <p>Telefone de Alguém (não do Seq)</p>
             </div>
-            <div class="FaleConoscoComponent">
-                <p>Instituição / Empresa:</p>
-                <input id="FaleConoscoInstituicao" type="text" placeholder="ex: IEEE CS - Guaratinguetá"/>
+            <div style="height: 5vh; display: flex; align-items: center;">
+                <img src="../assets/FaleConosco_assets/carbon_email.png"/>
+                <p>Email de contato</p>
             </div>
-            <div class="FaleConoscoComponent">
-                <p>E-mail:</p>
-                <input id="FaleConoscoEmail" type="text" placeholder="ex: IEEE CS - Guaratinguetá"/>
+            <div style="height: 5vh; display: flex; align-items: center;">
+                <img src="../assets/FaleConosco_assets/ant-design_clock-circle-outlined.png"/>
+                <p>Horário de Funcionamento</p>
             </div>
-            <div class="FaleConoscoComponent" style="grid-column: span 2;">
-                <p>Descrição do Projeto e Instituição:</p>
-                <input id="FaleConoscoEmail" type="text" placeholder="ex: IEEE CS - Guaratinguetá"/>
-            </div>
-            <textarea rows="3"> </textarea>
         </div>
-    </section>
+        <img src="../assets/FaleConosco_assets/logo CS.png" />
+    </div>
+        <div style="display: grid; grid-template-columns: 100%; width: 90vw; align-items: center; justify-items: center;">
+            <img src="../assets/FaleConosco_assets/logo CS.png" />
+            <div style="display: flex; align-items: center;">
+                <a href="https://www.linkedin.com/company/ieee-computer-society-guaratingueta/"><img src="../assets/FaleConosco_assets/akar-icons_linkedin-fill.png"></a>
+                <a href="https://www.instagram.com/cs_guara/"><img src="../assets/FaleConosco_assets/ant-design_instagram-outlined.png"></a>
+                <a href="https://www.facebook.com/CSGUARATINGUETA/"><img src="../assets/FaleConosco_assets/carbon_logo-facebook.png"></a>
+                <a href="https://www.youtube.com/channel/UCQbb5m7b-NdF8EX7Se6BANw"><img src="../assets/FaleConosco_assets/Youtube.png"></a>
+            </div>
+        </div>
 
 </body>
 
@@ -59,6 +63,10 @@
 
     .FaleConoscoComponent {
         width: 90%;
+    }
+
+    .intersectionImg {
+        height: 75vh;
     }
 </style>
 </html>
