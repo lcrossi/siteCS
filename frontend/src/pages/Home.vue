@@ -5,21 +5,19 @@
         </head>
         <body>
             <header>
-                <div class="barra_superior">
-                    <div class="conteudo_barra">
-                        <img alt="Logo CS" src="../assets/Home_assets/Logo CS.png" />
-                        <img class="logo2" alt="Logo2" src="../assets/Home_assets/logo2.png" />
-                        <div class="home">Home</div>
-                        <div class="separador">|</div>
-                        <div class="membros">Membros</div>
-                        <div class="separador">|</div>
-                        <div class="projetos">Projetos</div>
-                        <div class="separador">|</div>
-                        <div class="sobre_nos">Sobre nós</div>
-                        <div class="separador">|</div>
-                        <BIconList/>
-                    </div>
-                </div>
+                <nav>
+                    <a href="/"><img alt="Logo CS" src="../assets/Home_assets/Logo CS.png" /></a>
+                    <ul class="nav_lista">
+                        <li><a href="/">Home</a></li>
+                        <li class="nav_separador">|</li>
+                        <li><a href="/">Membros</a></li>
+                        <li class="nav_separador">|</li>
+                        <li><a href="/">Projetos</a></li>
+                        <li class="nav_separador">|</li>
+                        <li><a href="/">Sobre nós</a></li>  
+                    </ul>
+                    <div id="BurguerIcon"><BurguerIcon/></div> 
+                </nav>
             </header>
             <section>
                 <div class="home_sec1">
@@ -88,38 +86,41 @@
 </template>
 
 <script>
-import { BIconList } from 'bootstrap-vue';
+import BurguerIcon from '../components/pagesComponents/burguerIcon'
 
 export default {
     name: 'Home',
     components: {
-        BIconList
+        BurguerIcon
     }
 }
 </script>
 
 <style>
-    .barra_superior{
-        height: 70px;
-        width: 100%;
-        color: #FFFFFF;
-        background-color: #4E98D0;
-        position: fixed;
-    }
-
-    .conteudo_barra{
-        padding-top: 5px;
-        padding-bottom: 5px;
+    .nav_lista{
+        list-style: none;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        line-height: 33px;
     }
 
-    .separador{
-        font-size: 38px;
+    .nav_lista li{
+        letter-spacing: 2px;
+        margin-left: 32px;
     }
+
+    .textos_barra div, .textos_barra img{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav_separador{
+        font-size: 33px;
+        color: #FFFF;
+    }
+
+    #BurguerIcon{
+            display: none;
+        }
 
     .home_sec1{
         height: 698px;
@@ -141,9 +142,10 @@ export default {
     .home_sec1_btn{
         height: 70px;
         width: 370px;
-        margin-top: 100px;
+        margin-top: 50px;
+        border: none;
         border-radius: 20px;
-        font-family: arimo, Modulus-Bold, Arial, Helvetica, sans-serif;;
+        font-family: arimo, Modulus-Bold, Arial, Helvetica, sans-serif;
         font-weight: 700;
         font-size: 28px;
         color: #FFFFFF;
@@ -183,4 +185,5 @@ export default {
     .home_sec2_conteudo p{
         max-width: 900px;
     }
+
 </style>
