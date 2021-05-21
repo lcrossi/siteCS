@@ -5,7 +5,7 @@
         </head>
         <body>
             <header>
-                <nav>
+                <nav id="home_nav">
                     <a href="/"><img alt="Logo CS" src="../assets/Home_assets/Logo CS.png" /></a>
                     <ul class="nav_lista" id="lista_lateral">
                         <li><a href="/">Home</a></li>
@@ -33,12 +33,17 @@
                         </div>
                         <button class="home_sec1_btn">Conheça mais sobre nós</button>
                     </div>
-                    <div class="home_sec1_img">
-                        
+                    <div class="home_sec1_imgs">
+                        <div class="home_sec1_img_amarela">
+                            <img src="../assets/Home_assets/forma_amarela.png" alt="Forma amarela de fundo">
+                        </div>
+                        <div class="home_sec1_img_azul">
+                            <img src="../assets/Home_assets/forma_azul_clara.png" alt="Forma amarela de fundo">
+                        </div>
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="sec_destaques">
                 <div class = "container_white">
                 <br>
                 <div class = "linha_proj"></div>
@@ -114,10 +119,19 @@ export default {
 </script>
 
 <style>
+    body{ /* prevents scroll bar */
+            overflow-x: hidden !important;
+        }
+    
+    #home_nav{
+        z-index: 2;
+    }
+
     .nav_lista{
         list-style: none;
         display: flex;
         align-items: center;
+        z-index: 2;
     }
 
     .nav_lista li{
@@ -149,11 +163,22 @@ export default {
     }
 
     .home_sec1_principal{
-        margin-top: 170px;
+        margin: 170px 0px 10px 15px; 
+        z-index: 2;
     }
 
-    .home_sec1_img{
-        float: right;
+    .home_sec1_img_azul {
+        position: absolute;
+        top: 20vh;
+        left: 75vw;
+        z-index: 0;
+    }
+
+    .home_sec1_img_amarela{
+        position: absolute;
+        top: 20vh;
+        left: 75vw;
+        z-index: 0;
     }
 
     .home_sec1_titulo{
@@ -173,9 +198,15 @@ export default {
         background-color: #F4DC74;
     }
 
+    #sec_destaques{
+        z-index: 2;
+    }
+
     .home_sec2{
         margin-left: 135px;
         color: black;
+        background-color: #FFFF;
+        z-index: 2;
     }
 
     .home_sec2_linha {
@@ -216,7 +247,7 @@ export default {
             position: absolute;
             top: 10vh;
             right: 0;
-            width: 50vw;
+            width: 40vw;
             height: 90vh;
             background-image: linear-gradient(#4E98D0, #4e98d0ce, #4e98d09d, #4e98d070, #16558B);
             flex-direction: column;
@@ -224,11 +255,23 @@ export default {
             justify-content: space-around;
             transform: translateX(100%);
             transition: transform 0.5s ease-in 0.05s;
+            z-index:3;
+            box-shadow: #000000;
         }
 
         .nav_lista li{
             margin-left: 0;
+            /* background-color: #3572a7; */
+            /* background-image: linear-gradient(#4E98D0, #4e98d0be); */
+            background-image: linear-gradient(to left, transparent 10%,  #f4dd74de ,  #F4DC74 ); 
+            padding: 10px;
+            border-radius: 70px 8px;
             opacity: 0;
+        }
+
+        .nav_lista li:hover{
+            background-image: linear-gradient(to left,  #f4dd74de ,  #F4DC74 );
+            border-radius: 70px 8px;
         }
 
         #BurguerIcon{
