@@ -29,6 +29,24 @@ export default {
   font-size: 30px;
 }
 
+a {
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #4E98D0;
+  height: 10vh;
+}
+
 @font-face{
   font-family: "Modulus";
   src: url(./assets/Modulus/Modulus.ttf)
