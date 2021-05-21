@@ -7,7 +7,7 @@
             <header>
                 <nav>
                     <a href="/"><img alt="Logo CS" src="../assets/Home_assets/Logo CS.png" /></a>
-                    <ul class="nav_lista">
+                    <ul class="nav_lista" id="lista_lateral">
                         <li><a href="/">Home</a></li>
                         <li class="nav_separador">|</li>
                         <li><a href="/">Membros</a></li>
@@ -16,7 +16,7 @@
                         <li class="nav_separador">|</li>
                         <li><a href="/">Sobre nós</a></li>  
                     </ul>
-                    <div id="BurguerIcon"><BurguerIcon/></div> 
+                    <div v-on:click="show_hide_lateral_nav" id="BurguerIcon"><BurguerIcon/></div> 
                 </nav>
             </header>
             <section>
@@ -92,6 +92,24 @@ export default {
     name: 'Home',
     components: {
         BurguerIcon
+    },
+    methods: {
+        show_hide_lateral_nav: function (){
+            document.getElementById("lista_lateral").classList.toggle("active");
+            let nav_links  = document.querySelectorAll(".nav_lista li");
+
+            nav_links.forEach((link, index) => {
+                if(link.classList != "nav_separador"){
+                    if(link.style.animation == "" || link.style.opacity == "navLinkFadeOut ease-out"){
+                        link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index/7 + 0.3}s`; //Fading speed and links' delay to move left
+                        //console.log(link, index)
+                    }else{
+                        link.style.animation = `navLinkFadeOut ease-out ${index/8 + 0.15}s`;
+                        setTimeout( function(){ link.style.animation = ""   }, 500);
+                    }
+                }
+            })
+        },
     }
 }
 </script>
@@ -185,5 +203,63 @@ export default {
     .home_sec2_conteudo p{
         max-width: 900px;
     }
+    
+    @media(max-width: 1000px){
+        body{
+            overflow-x: hidden;
+        }
 
+        .nav_lista{
+            position: absolute;
+            top: 10vh;
+            right: 0;
+            width: 50vw;
+            height: 90vh;
+            /* background: #448ac0;
+            background: #68abdf; */
+            background-image: linear-gradient(#4E98D0, #4e98d0ce, #4e98d09d, #4e98d070, #16558B);
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in 0.05s;
+        }
+
+        .nav_lista li{
+            margin-left: 0;
+            opacity: 0;
+        }
+
+        #BurguerIcon{
+            display: block !important;
+        }
+    }
+
+    .nav_lista.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFadeIn {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+             transform: translateX(0px);
+        }
+    }
+
+    @keyframes navLinkFadeOut {
+        from {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+    }
 </style>
