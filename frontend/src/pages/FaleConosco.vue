@@ -6,7 +6,7 @@
             <title>Fale Conosco</title>
         </head>
         <body>
-            <section>
+            <section id="sec_contato">
                 <div class="container_blue imagem_de_fundo">
                     <div class="sobre_sec1">
                     <br/>
@@ -43,7 +43,7 @@
                 </div>
             </section>
             
-            <section> 
+            <section id="sec_venha_nos_visitar"> 
 
                 <div class = "container_white">
                 <br>

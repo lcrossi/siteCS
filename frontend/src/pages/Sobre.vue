@@ -4,7 +4,7 @@
             <title>Sobre nós</title>
         </head>
         <body>
-            <section>
+            <section id="sec_sobre_nos">
                 <div class = "container_blue">
                     <div class="sobre_sec1">
                     <br/>
@@ -73,7 +73,7 @@
             </section>
   
             
-            <section> 
+            <section id="sec_projetos"> 
 
                 <div class = "container_white">
                 <br>

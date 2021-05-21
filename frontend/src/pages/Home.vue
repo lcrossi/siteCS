@@ -19,7 +19,7 @@
                     <div v-on:click="show_hide_lateral_nav" id="BurguerIcon"><BurguerIcon/></div> 
                 </nav>
             </header>
-            <section>
+            <section id="sec_home">
                 <div class="home_sec1">
                     <div class="home_sec1_principal">
                         <div class="home_sec1_titulo">
@@ -101,11 +101,10 @@ export default {
             nav_links.forEach((link, index) => {
                 if(link.classList != "nav_separador"){
                     if(link.style.animation == "" || link.style.opacity == "navLinkFadeOut ease-out"){
-                        link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index/7 + 0.3}s`; //Fading speed and links' delay to move left
-                        //console.log(link, index)
+                        link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index/7 + 0.3}s`; //Fading speed and links' delay to move into screen
                     }else{
-                        link.style.animation = `navLinkFadeOut ease-out ${index/8 + 0.15}s`;
-                        setTimeout( function(){ link.style.animation = ""   }, 500);
+                        link.style.animation = `navLinkFadeOut ease-out ${index/8 + 0.15}s`; //Delay to move out of screen
+                        setTimeout( function(){ link.style.animation = "" }, 500 );
                     }
                 }
             })
@@ -151,6 +150,10 @@ export default {
 
     .home_sec1_principal{
         margin-top: 170px;
+    }
+
+    .home_sec1_img{
+        float: right;
     }
 
     .home_sec1_titulo{
@@ -204,8 +207,8 @@ export default {
         max-width: 900px;
     }
     
-    @media(max-width: 1000px){
-        body{
+    @media(max-width: 990px){
+        body{ /* prevents scroll bar */
             overflow-x: hidden;
         }
 
@@ -215,8 +218,6 @@ export default {
             right: 0;
             width: 50vw;
             height: 90vh;
-            /* background: #448ac0;
-            background: #68abdf; */
             background-image: linear-gradient(#4E98D0, #4e98d0ce, #4e98d09d, #4e98d070, #16558B);
             flex-direction: column;
             align-items: center;
