@@ -10,11 +10,15 @@
                     <ul class="nav_lista" id="lista_lateral">
                         <li><a href="/">Home</a></li>
                         <li class="nav_separador">|</li>
-                        <li><a href="/">Membros</a></li>
+                        <li><a href="/">Destaques</a></li>
                         <li class="nav_separador">|</li>
                         <li><a href="/">Projetos</a></li>
                         <li class="nav_separador">|</li>
-                        <li><a href="/">Sobre nós</a></li>  
+                        <li><a href="/">Sobre nós</a></li>
+                        <li class="nav_separador">|</li>
+                        <li><a href="/">Contato</a></li>
+                        <li class="nav_separador">|</li>  
+                        <li><a href="/">Localização</a></li>  
                     </ul>
                     <div v-on:click="show_hide_lateral_nav" id="BurguerIcon"><BurguerIcon/></div> 
                 </nav>
@@ -125,6 +129,7 @@ export default {
     
     #home_nav{
         z-index: 2;
+        box-shadow: 15px black;
     }
 
     .nav_lista{
@@ -238,7 +243,7 @@ export default {
         max-width: 900px;
     }
     
-    @media(max-width: 990px){
+    @media(max-width: 1200px){
         body{ /* prevents scroll bar */
             overflow-x: hidden;
         }
@@ -256,7 +261,6 @@ export default {
             transform: translateX(100%);
             transition: transform 0.5s ease-in 0.05s;
             z-index:3;
-            box-shadow: #000000;
         }
 
         .nav_lista li{
