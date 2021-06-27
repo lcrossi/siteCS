@@ -13,7 +13,7 @@
                         <div class="linha_sec1"></div>
                         <div class="sobre_sec1_titulo">Entre em contato conosco</div>
                         <form>
-                            <div style="width: 55vw; display: grid; grid-template-columns: 50% 50%;">
+                            <div style="width: 55vw; display: flex; flex-wrap: wrap">
                             <div class="fale_conosco_component">
                                 <p>Nome:</p>
                                 <input name="FaleConoscoNome" type="text" placeholder="ex: Fernando"/>
@@ -30,9 +30,10 @@
                                 <p>E-mail:</p>
                                 <input name="FaleConoscoEmail" type="text" placeholder="ex: csguara@gmail.com"/>
                             </div>
-                            <div class="fale_conosco_component" style="grid-column: span 2;">
+                            <div class="fale_conosco_component_big">
                                 <p>Descrição do Projeto e Instituição:</p>
-                                <textArea rows="4" name="FaleConoscoDescricaoProjeto" type="text" placeholder="ex: Olá, meu nome é C3PO e eu gostaria de conversar sobre uma parceria/projeto/*assunto* com o propósito de....."/>
+                                <textArea rows="3" name="FaleConoscoDescricaoProjeto" type="text" 
+                                placeholder="ex: Olá, meu nome é C3PO e eu gostaria de conversar sobre uma parceria/projeto/*assunto* com o propósito de....."/>
                             </div>
                             <div style="grid-column: span 2; width: 90%; display: flex; place-content: center">
                                 <button type="submit" style="background-color: orange; border: orange 2px solid; width: 50%;" >Enviar</button>
@@ -115,15 +116,22 @@ export default {
         color: lightgray;
     }
 
-    .fale_conosco_component {
-        width: 90%;
-        padding-bottom: 10vh;
-    }
-
     .intersectionImg {
         height: 100%;
         width: 100%;
         background-color: #16558B;
+    }
+
+    .fale_conosco_component {
+        width: 300px;
+        padding-right: 30px;
+        padding-bottom: 10vh;
+    }
+
+    .fale_conosco_component_big {
+        width: 90%;
+        padding-right: 30px;
+        padding-bottom: 10vh;
     }
 
     .fale_conosco_topic {
@@ -136,7 +144,7 @@ export default {
         background-image: url('../assets/FaleConosco_assets/Intersect (forma amarela).png');
         background-repeat: no-repeat;
         background-position: right;
-        background-size: 40%
+        background-size: 40% 100%;
     }
  
 </style>
