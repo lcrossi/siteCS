@@ -32,7 +32,7 @@
                         <br/>
                         <div class="home_sec1_conteudo">
                             <p>Somos uma extensão capitulo do IEEE</p>
-                            <p>da Feg-Unesp, somos voltados</p>   
+                            <p>da Feg-Unesp, voltados</p>   
                             <p>principalmente para a area de TI.</p> 
                         </div>
                         <button class="home_sec1_btn">Conheça mais sobre nós</button>
@@ -53,39 +53,29 @@
                 <div class = "linha_proj"></div>
                 <div class = "titulo_proj">Destaque de alguns trabalhos</div> 
                         <div class="home_sec2_conteudo">
-                            <div class="home_sec2_conteudo1">
+                            <div class="middle">
                                 <p>
-                                    Montamos projetos de apps, onde trabalhamos desde o 
-                                    Front-end com telas, design, Ui, UX, testes de usabilidade, 
-                                    ao Back-end com javascript, HTML, CSS, Node, react.js. 
-                                    Alem de claro o trabalho em equipe e metodologias ageis 
-                                    como sprints bem definidos e prazos de entrega.
+                                    Montamos projetos de apps e sites, onde trabalhamos no: <br/>
+                                    Front-end, com UI, UX (testes de usabilidade) e implementação (principalmente com React e React Native - Javascript). <br/>
+                                    Back-end, com a criação de bancos de dados, usando MongoDB, SQL e NodeJS. <br/>
+                                    Além da gestão dos projetos usando metodologias ágeis (com foco no Scrum),
+                                    através de sprints bem definidas, prazos, entregáveis e escopos.
                                 </p>
                                 <img src="../assets/Home_assets/desenho_celular.png" 
                                     alt="Imagem de celular"/>
                             </div>
                             <br>
-                            <div class="home_sec2_conteudo2">
-                                 <img src="../assets/Home_assets/W.png" 
-                                    alt="Imagem de celular"/>
-                                <p>
-                                    Desenvolvemos tambem sites desenvolvendo habilidade 
-                                    de Front-end e Back-end. Alem de trabalho em equiupe 
-                                    e metodologias ageis como scrum
-                                </p>
-                            </div>
                             <br>
-                            <div class="home_sec2_conteudo3">
-                                <p>
-                                    Participamos e incentivamos os mebros a participarem de
-                                    Hackatoons, que são eventos onde desenvolvemos um 
-                                    site ou app ou desafios de logica, em um determinado tempo, 
-                                    nos quais o tempo e o trabalho em equipe é essencial. 
-                                    Nestes eventos são os mais arduos e os que nos ajudam 
-                                    mais a desenvolvermos nossas habilidades como programadores.
-                                </p>
-                                 <img src="../assets/Home_assets/rosto.png" 
+                            <div class="middle">
+                                <img src="../assets/Home_assets/W.png" 
                                     alt="Imagem de celular"/>
+                                <p>
+                                    Participamos e incentivamos os membros a participarem de Hackathons: <br/> 
+                                    são eventos onde podemos desenvolver um projeto ou completar desafios de logica, 
+                                    em um determinado tempo, nos quais a gestão do tempo e o trabalho em equipe é essencial. 
+                                    Estes eventos são os mais árduos e os que nos ajudam a realmente mensurar e desenvolver 
+                                    nossas habilidades como programadores.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -241,6 +231,10 @@ export default {
 
     .home_sec2_conteudo p{
         max-width: 900px;
+    }
+
+    .middle {
+        place-items: center;
     }
     
     @media(max-width: 1200px){

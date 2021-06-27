@@ -12,11 +12,11 @@
                         <div class="sobre_sec1_titulo">Sobre nós</div>
                             <div class="sobre_sec1_texto">
                                 <p>
-                                A CS é um capítulo do IEEE que tem o objetivo desmitificar e fomentar a computação, 
-                                entender as tecnologias e ferramentas para montagem de apps, sites, análise de dados
-                                 além das diversas outras hard skills envolvidas nos processos e, também, as soft skills.
-                                Tudo isso por meio de projetos e capacitações com o intuito de ajudar nossos membros a 
-                                se prepararem para carreiras, principalmente aquelas que envolvam a área de TI.
+                                A CS é um capítulo do IEEE que tem o objetivo desmistificar e fomentar a prática da computação
+                                a partir do estudo, entendimento e aplicação das tecnologias e ferramentas usadas na montagem de apps e sites, análise de dados
+                                e diversas outras hard (e soft) skills envolvidas nos processos. <br/>
+                                Tudo isso acontece por meio de projetos e capacitações internas com o intuito de ajudar nossos integrantes a 
+                                se prepararem para o mercado de trabalho, principalmente naquelas que envolvam a área de TI.
                                 </p>
                                 <br>
                              </div>
@@ -29,43 +29,43 @@
                             <div class="sobre_sec2_membros">
                                <div class = "perfil_membro">
                                    <div class = "foto"></div>
-                                   <div class = "nome">Nome/Apelido</div>
-                                   <div class = "cargo">Cargo</div>
+                                   <div class = "nome">Fernando (Seq)</div>
+                                   <div class = "cargo">Presidente</div>
                                 </div>  
                                 <div class = "perfil_membro">
                                    <div class = "foto"></div>
-                                   <div class = "nome">Nome/Apelido</div>
-                                   <div class = "cargo">Cargo</div>
+                                   <div class = "nome">Luis (Zeca)</div>
+                                   <div class = "cargo">Diretor de Projetos</div>
                                 </div>  
                                <div class = "perfil_membro">
                                    <div class = "foto"></div>
-                                   <div class = "nome">Nome/Apelido</div>
-                                   <div class = "cargo">Cargo</div>
+                                   <div class = "nome">Lucas (Come)</div>
+                                   <div class = "cargo">Coordenador de Projetos</div>
                                 </div>  
                                <div class = "perfil_membro">
                                    <div class = "foto"></div>
-                                   <div class = "nome">Nome/Apelido</div>
-                                   <div class = "cargo">Cargo</div>
+                                   <div class = "nome">Lukas (Oompa)</div>
+                                   <div class = "cargo">Representante de DEV</div>
                                 </div>  
                                <div class = "perfil_membro">
                                    <div class = "foto"></div>
-                                   <div class = "nome">Nome/Apelido</div>
-                                   <div class = "cargo">Cargo</div>
+                                   <div class = "nome">Henrique (Astro)</div>
+                                   <div class = "cargo">Diretor Secretário</div>
                                 </div>  
                                <div class = "perfil_membro">
                                    <div class = "foto"></div>
-                                   <div class = "nome">Nome/Apelido</div>
-                                   <div class = "cargo">Cargo</div>
+                                   <div class = "nome">João (Calado)</div>
+                                   <div class = "cargo">Programador de IA</div>
                                 </div>
                                <div class = "perfil_membro">
                                    <div class = "foto"></div>
-                                   <div class = "nome">Nome/Apelido</div>
-                                   <div class = "cargo">Cargo</div>
+                                   <div class = "nome">Gabriel (Garçom)</div>
+                                   <div class = "cargo">Diretor de Marketing</div>
                                 </div>  
                                <div class = "perfil_membro">
                                    <div class = "foto"></div>
-                                   <div class = "nome">Nome/Apelido</div>
-                                   <div class = "cargo">Cargo</div>
+                                   <div class = "nome">Laís (Ed)</div>
+                                   <div class = "cargo">Assessora de Marketing</div>
                                 </div>                                 
                             </div>
                         </div>
@@ -82,29 +82,35 @@
                 <br>
                 <div class = "projetos">
                     <div class = "trabalho">
-                        <div class = "foto_trabalho"></div>
-                        <div class = "nome_trabalho">Trabalho 1</div>
+                        <img src="../assets/Home_assets/desenho_celular.png" 
+                        alt="Imagem de celular"/>
+                        <div class = "nome_trabalho">Projeto RCCA</div>
                         <div class = "descricao">
                             <p>
-                            Breve descrição
+                            Neste projeto você pode utilizar ferramentas como a Espinha de Peixe (Ishikawa), Matrizes de Priorização (GUT e AB), 
+                            5W2H, entre diversas outras para mapear causas raiz e definir as ações corretivas e otimizar a gestão da qualidade!
                             </p>
                         </div>
                     </div>
                     <div class = "trabalho">
-                        <div class = "foto_trabalho"></div>
-                        <div class = "nome_trabalho">Trabalho 2</div>
+                        <img src="../assets/Home_assets/desenho_celular.png" 
+                        alt="Imagem de celular"/>
+                        <div class = "nome_trabalho">FeGo</div>
                         <div class = "descricao">
                             <p>
-                            Breve descrição
+                            Este projeto tem como intuito o desenvolvimento de um aplicativo de caronas exclusivo para universitários, alunos
+                            do nosso campus da UNESP de Guaratinguetá e o desenvolvimento foi feito em parceria com o Centro Acadêmico de Engenharia de Produção (CaePro).
                             </p>
                         </div>
                     </div>
                     <div class = "trabalho">
-                        <div class = "foto_trabalho"></div>
-                        <div class = "nome_trabalho">Trabalho 3</div>
+                        <img src="../assets/Home_assets/desenho_celular.png" 
+                        alt="Imagem de celular"/>
+                        <div class = "nome_trabalho">Site da CS</div>
                         <div class = "descricao">
                             <p>
-                            Breve descrição
+                            O resultado deste projeto é a interface que você, usuário, está vendo agora! Este projeto tem como intuito centralizar
+                            informações para os integrantes da nossa extensão.
                             </p>
                         </div>
                     </div>
@@ -230,26 +236,19 @@ export default {
     }
 
     .projetos{
-        width: 90%;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .trabalho{
+        width: 300px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        place-items: center;
     }
 
-    .foto_trabalho{
-        height: 60vh;
-        width: 20vw;
-        background-color: #4E98D0;
-        border-radius: 50px;
-        box-shadow: -3px 6px 50px rgba(0, 0, 0, 0.2);
-    }
     .descricao{
         color: #7c7c7c7c;
         font-size:21px;
@@ -257,7 +256,7 @@ export default {
 
     .descricao p{
         max-width: 230px;
-        max-height: 122px;
+        font-size: clamp(14px, 80%, 18px);
     }
  
 </style>
