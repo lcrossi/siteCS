@@ -133,6 +133,9 @@ export default {
         letter-spacing: 2px;
         margin-left: 32px;
     }
+    .nav_lista a {
+        font-size: clamp(0.3rem,2vw,2rem);
+    }
 
     .textos_barra div, .textos_barra img{
         display: flex;

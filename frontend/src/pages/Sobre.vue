@@ -11,13 +11,11 @@
                         <div class="linha_sec1"></div>
                         <div class="sobre_sec1_titulo">Sobre nós</div>
                             <div class="sobre_sec1_texto">
-                                <p>
                                 A CS é um capítulo do IEEE que tem o objetivo desmistificar e fomentar a prática da computação
                                 a partir do estudo, entendimento e aplicação das tecnologias e ferramentas usadas na montagem de apps e sites, análise de dados
                                 e diversas outras hard (e soft) skills envolvidas nos processos. <br/>
                                 Tudo isso acontece por meio de projetos e capacitações internas com o intuito de ajudar nossos integrantes a 
                                 se prepararem para o mercado de trabalho, principalmente naquelas que envolvam a área de TI.
-                                </p>
                                 <br>
                              </div>
                         </div>
@@ -163,7 +161,10 @@ export default {
 
     .sobre_sec1_texto{
         text-align: justify;
-        width: 100%
+        width: 100%;
+        font-size: 24px;
+        line-height: 24px;
+        padding-bottom: 50px;
     }
 
     .sobre_sec2 {
@@ -191,26 +192,32 @@ export default {
       }
 
     .perfil_membro{
-        margin-top: 10px;
+        margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin:5px;
-    }
+        }
     .foto{
          border-radius: 50%;
          background-color: #C4C4C4;
          width: 100px;
          height:100px;
         box-shadow: -10px 9px 50px rgba(0, 0, 0, 0.17);
+
     }
     
     .nome{
-        font-size:24px;
+        font-size: 24px;
+        min-width: 200px;
+        max-width: 200px;
+        text-align: center;
     }
 
     .cargo{
         font-size:24px;
+        max-width: 200px;
+        min-width: 200px;
+        text-align: center;
     }
 
     .container_white{
@@ -218,10 +225,10 @@ export default {
         background-color: #FFFFFF;
         display: flex;
         justify-content: space-around;
-        display:flex;
         flex-direction: column;
         padding-bottom: 10vh;
         margin-left: 10vw;
+        margin-right: 10vw;
     }
     
     .linha_proj{
@@ -252,11 +259,12 @@ export default {
     .descricao{
         color: #7c7c7c7c;
         font-size:21px;
+        text-align: justify;
     }
 
     .descricao p{
-        max-width: 230px;
-        font-size: clamp(14px, 80%, 18px);
+    max-width: 230px;
+    font-size: clamp(14px, 80%, 18px);
     }
  
 </style>
