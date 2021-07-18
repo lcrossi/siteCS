@@ -30,9 +30,10 @@ export default {
 }
 
 a {
-  color: #ffff;
+  color: #FFFF;
   text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 a:hover {
@@ -55,5 +56,38 @@ nav {
 @font-face{
   font-family: "Modulus-Bold";
   src: url(./assets/Modulus/Modulus-Bold.otf)
+}
+
+.container_blue {
+  color: #FFFFFF;
+  background-color: #16558B;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+    
+.container_yellow {
+  color: #FFFFFF;
+  background-color: #e0c757;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.container_white{
+  color: #000000;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 </style>
