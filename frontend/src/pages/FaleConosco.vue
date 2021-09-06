@@ -46,40 +46,45 @@
             <section id="sec_venha_nos_visitar"> 
 
                 <div class = "container_white">
-                <br>
-                <div class = "linha_proj"></div>
-                <div class = "titulo_proj">Venha nos visitar</div> 
-                <br>
-                <div style="margin-bottom: 10vh; display: flex; align-content: space-between">
-                    <div style="width: 60vw; display: grid; grid-template-columns: 100%;">
-                        <div class="fale_conosco_topic">
-                            <i class="material-icons">location_on</i>
-                            <p>Av. Dr. Ariberto Pereira da Cunha, 333</p>
+                    <br>
+                    <div class = "linha_titulo"></div>
+                    <div class = "titulo_proj">Venha nos visitar</div> 
+                    <br>
+                    <div style="margin-bottom: 10vh; display: flex; align-content: space-between">
+                        <div style="width: 60vw; display: grid; grid-template-columns: 100%;">
+                            <div class="fale_conosco_topic">
+                                <i class="material-icons">location_on</i>
+                                <p>Av. Dr. Ariberto Pereira da Cunha, 333</p>
+                            </div>
+                            <div class="fale_conosco_topic">
+                                <i class="material-icons">phone</i>
+                                <p>(10) 98765-4321</p>
+                            </div>
+                            <div class="fale_conosco_topic">
+                                <i class="material-icons">email</i>
+                                <p>fzpenha@gmail.com</p>
+                            </div>
+                            <div class="fale_conosco_topic">
+                                <i class="material-icons">schedule</i>
+                                <p>08:00 às 18:00</p>
+                            </div>
                         </div>
-                        <div class="fale_conosco_topic">
-                            <i class="material-icons">phone</i>
-                            <p>(10) 98765-4321</p>
-                        </div>
-                        <div class="fale_conosco_topic">
-                            <i class="material-icons">email</i>
-                            <p>fzpenha@gmail.com</p>
-                        </div>
-                        <div class="fale_conosco_topic">
-                            <i class="material-icons">schedule</i>
-                            <p>08:00 às 18:00</p>
-                        </div>
-                    </div>
-                    <img style="display: flex; place-self: center; width: 80%; heigth: 80%" src="../assets/FaleConosco_assets/mapa_localizacao.jpg" />
-                </div>
-                <div style="display: grid; grid-template-columns: 100%; width: 100%; place-items: center;">
-                    <img src="../assets/FaleConosco_assets/logo CS.png" />
-                    <div style="display: flex; align-items: center; width: 20%; justify-content: space-between">
-                        <a href="https://www.linkedin.com/company/ieee-computer-society-guaratingueta/"><img src="../assets/FaleConosco_assets/linkedinIcon.png" /></a>
-                        <a href="https://www.instagram.com/cs_guara/"><img src="../assets/FaleConosco_assets/instagramIcon.png" /></a>
-                        <a href="https://www.facebook.com/CSGUARATINGUETA/"><img src="../assets/FaleConosco_assets/facebookIcon.png" /></a>
-                        <a href="https://www.youtube.com/channel/UCQbb5m7b-NdF8EX7Se6BANw"><img src="../assets/FaleConosco_assets/youtubeIcon.png" /></a>
+                        <img style="display: flex; place-self: center; width: 80%; heigth: 80%;" src="../assets/FaleConosco_assets/mapa_localizacao.jpg" />
                     </div>
                 </div>
+                <div class = "container_yellow">
+                    <br>
+                    <br>
+                    <div style="display: grid; grid-template-columns: 100%; width: 100%; place-items: center;">
+                        <img src="../assets/FaleConosco_assets/logo CS.png" />
+                        <br>
+                        <div style="display: flex; align-items: center; width: 20%; justify-content: space-between">
+                            <a href="https://www.linkedin.com/company/ieee-computer-society-guaratingueta/"><img src="../assets/FaleConosco_assets/linkedinIcon.png" /></a>
+                            <a href="https://www.instagram.com/cs_guara/"><img src="../assets/FaleConosco_assets/instagramIcon.png" /></a>
+                            <a href="https://www.facebook.com/CSGUARATINGUETA/"><img src="../assets/FaleConosco_assets/facebookIcon.png" /></a>
+                            <a href="https://www.youtube.com/channel/UCQbb5m7b-NdF8EX7Se6BANw"><img src="../assets/FaleConosco_assets/youtubeIcon.png" /></a>
+                        </div>
+                    </div>
 
                 </div>
             </section>

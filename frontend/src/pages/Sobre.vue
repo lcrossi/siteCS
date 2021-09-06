@@ -24,48 +24,7 @@
                             <div class = "linha_sec2"></div>
                             <div class="sobre_sec1_titulo" style="align-self: center">Nossos Membros</div>
                             <br>
-                            <div class="sobre_sec2_membros">
-                               <div class = "perfil_membro">
-                                   <div class = "foto"></div>
-                                   <div class = "nome">Fernando (Seq)</div>
-                                   <div class = "cargo">Presidente</div>
-                                </div>  
-                                <div class = "perfil_membro">
-                                   <div class = "foto"></div>
-                                   <div class = "nome">Luis (Zeca)</div>
-                                   <div class = "cargo">Diretor de Projetos</div>
-                                </div>  
-                               <div class = "perfil_membro">
-                                   <div class = "foto"></div>
-                                   <div class = "nome">Lucas (Come)</div>
-                                   <div class = "cargo">Coordenador de Projetos</div>
-                                </div>  
-                               <div class = "perfil_membro">
-                                   <div class = "foto"></div>
-                                   <div class = "nome">Lukas (Oompa)</div>
-                                   <div class = "cargo">Representante de DEV</div>
-                                </div>  
-                               <div class = "perfil_membro">
-                                   <div class = "foto"></div>
-                                   <div class = "nome">Henrique (Astro)</div>
-                                   <div class = "cargo">Diretor Secretário</div>
-                                </div>  
-                               <div class = "perfil_membro">
-                                   <div class = "foto"></div>
-                                   <div class = "nome">João (Calado)</div>
-                                   <div class = "cargo">Programador de IA</div>
-                                </div>
-                               <div class = "perfil_membro">
-                                   <div class = "foto"></div>
-                                   <div class = "nome">Gabriel (Garçom)</div>
-                                   <div class = "cargo">Diretor de Marketing</div>
-                                </div>  
-                               <div class = "perfil_membro">
-                                   <div class = "foto"></div>
-                                   <div class = "nome">Laís (Ed)</div>
-                                   <div class = "cargo">Assessora de Marketing</div>
-                                </div>                                 
-                            </div>
+                            <PerfilMembros :ArrayMembers="members"/>  
                         </div>
                 </div>
             </section>
@@ -75,7 +34,7 @@
 
                 <div class = "container_white">
                 <br>
-                <div class = "linha_proj"></div>
+                <div class = "linha_titulo"></div>
                 <div class = "titulo_proj">Destaque de alguns trabalhos</div> 
                 <br>
                 <div class = "projetos">
@@ -108,7 +67,7 @@
                         <div class = "descricao">
                             <p>
                             O resultado deste projeto é a interface que você, usuário, está vendo agora! Este projeto tem como intuito centralizar
-                            informações para os integrantes da nossa extensão.
+                            informações para pessoas de dentro e fora da extensão.
                             </p>
                         </div>
                     </div>
@@ -124,25 +83,32 @@
 </template>
 
 <script>
+import PerfilMembros from '../components/pagesComponents/sobreComponents/perfilMembros.vue'
 
 export default {
-    name: 'Sobre'
+    name: 'Sobre',
+    data() {
+        return {
+            members: [
+                {nome: 'Fernando (Seq)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Presidente', id:1},
+                {nome: 'Pedro (Casado)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Vice-Presidente', id:2},
+                {nome: 'Luis (Zeca)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Diretor de Projetos', id:3},
+                {nome: 'Henrique (Astro)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Diretor Secretário', id:4},
+                {nome: 'Gabriel (Garçom)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Diretor de Marketing', id:5},
+                {nome: 'Lucas (Come)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Coordenador de Projetos', id:6},
+                {nome: 'Lukas (Oompa)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Representante de DEV', id:7},
+                {nome: 'João (Calado)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Desenvolvedor de IA', id:8},
+                {nome: 'Laís (Ed)', foto: '../../../assets/Sobre_assets/silhuetaPerfil.png', cargo: 'Assessora de Marketing', id:9},
+            ]
+        }
+    },
+    components:{
+        PerfilMembros,
+    }
 }
 </script>
 
 <style>
-    
-    .container_blue {
-        color: #FFFFFF;
-        background-color: #16558B;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        padding-bottom: 10vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-
     .sobre_sec1 {
         display: flex;
         flex-direction: column;
@@ -182,21 +148,20 @@ export default {
         margin-bottom: 10px;
 
     }
-
-      .sobre_sec2_membros{
+    .sobre_sec2_membros{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%
-      }
+    }
 
     .perfil_membro{
         margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
+    }
     .foto{
          border-radius: 50%;
          background-color: #C4C4C4;
@@ -231,7 +196,7 @@ export default {
         margin-right: 10vw;
     }
     
-    .linha_proj{
+    .linha_titulo{
         width: 70px;
         border-top: 3px solid #000000;
         border-radius: 5px;
@@ -257,7 +222,7 @@ export default {
     }
 
     .descricao{
-        color: #7c7c7c7c;
+        color: #5c5c5c7c;
         font-size:21px;
         text-align: justify;
     }

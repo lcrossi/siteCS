@@ -10,15 +10,15 @@
                     <ul class="nav_lista" id="lista_lateral">
                         <li><a href="/">Home</a></li>
                         <li class="nav_separador">|</li>
-                        <li><a href="/">Destaques</a></li>
+                        <li><a @click="section_scroll('sec_descricao')"> Projetos </a></li>
                         <li class="nav_separador">|</li>
-                        <li><a href="/">Projetos</a></li>
+                        <li><a @click="section_scroll('sec_projetos')"> Destaques </a></li>                        
                         <li class="nav_separador">|</li>
-                        <li><a href="/">Sobre nós</a></li>
+                        <li><a @click="section_scroll('sec_sobre_nos')"> Sobre nós </a></li>
                         <li class="nav_separador">|</li>
-                        <li><a href="/">Contato</a></li>
+                        <li><a @click="section_scroll('sec_contato')"> Contato </a></li>
                         <li class="nav_separador">|</li>  
-                        <li><a href="/">Localização</a></li>  
+                        <li><a @click="section_scroll('sec_venha_nos_visitar')"> Localização </a></li>  
                     </ul>
                     <div v-on:click="show_hide_lateral_nav" id="BurguerIcon"><BurguerIcon/></div> 
                 </nav>
@@ -47,11 +47,11 @@
                     </div>
                 </div>
             </section>
-            <section id="sec_destaques">
+            <section id="sec_descricao">
                 <div class = "container_white">
                 <br>
-                <div class = "linha_proj"></div>
-                <div class = "titulo_proj">Destaque de alguns trabalhos</div> 
+                <div class = "linha_titulo"></div>
+                <div class = "titulo_proj">o que fazemos</div> 
                         <div class="home_sec2_conteudo">
                             <div class="middle">
                                 <p>
@@ -108,6 +108,10 @@ export default {
                 }
             })
         },
+
+        section_scroll: function(id) {
+            document.getElementById(id).scrollIntoView();
+        }
     }
 }
 </script>
@@ -132,6 +136,10 @@ export default {
     .nav_lista li{
         letter-spacing: 2px;
         margin-left: 32px;
+        color: #FFFF;
+    }
+    .nav_lista a {
+        font-size: clamp(0.3rem,2vw,2rem);
     }
     .nav_lista a {
         font-size: clamp(0.3rem,2vw,2rem);
@@ -196,7 +204,7 @@ export default {
         background-color: #F4DC74;
     }
 
-    #sec_destaques{
+    #sec_descricao{
         z-index: 2;
     }
 
@@ -245,6 +253,14 @@ export default {
             overflow-x: hidden;
         }
 
+        #home_nav{
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            opacity: 95%;
+        }
+
         .nav_lista{
             position: absolute;
             top: 10vh;
@@ -262,8 +278,6 @@ export default {
 
         .nav_lista li{
             margin-left: 0;
-            /* background-color: #3572a7; */
-            /* background-image: linear-gradient(#4E98D0, #4e98d0be); */
             background-image: linear-gradient(to left, transparent 10%,  #f4dd74de ,  #F4DC74 ); 
             padding: 10px;
             border-radius: 70px 8px;
