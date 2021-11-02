@@ -5,17 +5,17 @@
       <ul class="nav_lista" id="lista_lateral">
         <li><router-link to="/">Home</router-link></li>
         <li class="nav_separador">|</li>
-        <li><a @click="section_scroll('sec_descricao')"> Projetos </a></li>
+        <li><router-link to="/"><a @click="section_scroll('sec_descricao')"> Projetos </a></router-link></li>
         <li class="nav_separador">|</li>
-        <li><a @click="section_scroll('sec_projetos')"> Destaques </a></li>                        
+        <li><router-link to="/"><a @click="section_scroll('sec_projetos')"> Destaques </a></router-link></li>             
         <li class="nav_separador">|</li>
-        <li><a @click="section_scroll('sec_sobre_nos')"> Sobre nós </a></li>
+        <li><router-link to="/"><a @click="section_scroll('sec_sobre_nos')"> Sobre nós </a></router-link></li>
         <li class="nav_separador">|</li>
-        <li><a @click="section_scroll('sec_contato')"> Contato </a></li>
+        <li><router-link to="/"><a @click="section_scroll('sec_contato')"> Contato </a></router-link></li>
         <li class="nav_separador">|</li>  
-        <li><a @click="section_scroll('sec_venha_nos_visitar')"> Localização </a></li>
+        <li><router-link to="/"><a @click="section_scroll('sec_venha_nos_visitar')"> Localização </a></router-link></li>
         <li class="nav_separador">|</li>  
-        <li><router-link to="/Login">Login</router-link></li>  
+        <li><router-link to="/Login">Login</router-link></li>
       </ul>
       <div v-on:click="show_hide_lateral_nav" id="BurguerIcon"><BurguerIcon/></div> 
     </nav>
