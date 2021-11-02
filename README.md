@@ -1,6 +1,6 @@
 # Projeto Site CS
 
-Este projeto foi criado no intuito de abrir a IEEE Computer Society Student Branch - Guaratinguetá para mundo, sendo uma forma eficiente e confiável de contato, que referencie o que somos para todos.
+Este projeto foi criado no intuito de abrir a IEEE Student Branch Computer Society - Guaratinguetá para mundo, sendo uma forma eficiente e confiável de contato, que referencie o que somos para todos.
 
 ## **Pré-requisitos**
 
