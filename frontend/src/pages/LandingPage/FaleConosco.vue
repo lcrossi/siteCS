@@ -35,7 +35,7 @@
                                 <textArea rows="4" name="FaleConoscoDescricaoProjeto" type="text" placeholder="ex: Olá, meu nome é C3PO e eu gostaria de conversar sobre uma parceria/projeto/*assunto* com o propósito de....."/>
                             </div>
                             <div style="grid-column: span 2; width: 90%; display: flex; place-content: center">
-                                <button type="submit" style="background-color: orange; border: orange 2px solid; width: 50%;" >Enviar</button>
+                                <button v-on:click="enviar" type="submit" style="cursor: pointer; background-color: orange; border: orange 2px solid; width: 50%;" >Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -69,7 +69,7 @@
                                 <p>08:00 às 18:00</p>
                             </div>
                         </div>
-                        <img style="display: flex; place-self: center; width: 80%; heigth: 80%;" src="../../assets/FaleConosco_assets/mapa_localizacao.jpg" />
+                        <img style="display: flex; margin-left: 15px;place-self: center; width: 80%; heigth: 80%;" src="../../assets/FaleConosco_assets/mapa_localizacao.jpg" />
                     </div>
                 </div>
                 <div class = "container_yellow">
@@ -95,8 +95,14 @@
 <script>
 
 export default {
-    name: 'Sobre'
+    name: 'Sobre',
+    methods: {
+        enviar() {
+            alert('Enviado! ... Ou será que não...')
+        }
+    }
 }
+
 </script>
 
 <style>

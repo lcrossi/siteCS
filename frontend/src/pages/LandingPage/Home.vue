@@ -102,6 +102,7 @@
     }
 
     .home_sec1_btn{
+        cursor: pointer;
         height: 70px;
         width: 370px;
         margin-top: 50px;
