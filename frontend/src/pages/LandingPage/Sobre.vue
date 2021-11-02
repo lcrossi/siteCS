@@ -39,7 +39,7 @@
                 <br>
                 <div class = "projetos">
                     <div class = "trabalho">
-                        <img src="../assets/Home_assets/desenho_celular.png" 
+                        <img src="../../assets/Home_assets/desenho_celular.png" 
                         alt="Imagem de celular"/>
                         <div class = "nome_trabalho">Projeto RCCA</div>
                         <div class = "descricao">
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class = "trabalho">
-                        <img src="../assets/Home_assets/desenho_celular.png" 
+                        <img src="../../assets/Home_assets/desenho_celular.png" 
                         alt="Imagem de celular"/>
                         <div class = "nome_trabalho">FeGo</div>
                         <div class = "descricao">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class = "trabalho">
-                        <img src="../assets/Home_assets/desenho_celular.png" 
+                        <img src="../../assets/Home_assets/desenho_celular.png" 
                         alt="Imagem de celular"/>
                         <div class = "nome_trabalho">Site da CS</div>
                         <div class = "descricao">
@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import PerfilMembros from '../components/pagesComponents/sobreComponents/perfilMembros.vue'
+import PerfilMembros from '../../components/pagesComponents/sobreComponents/perfilMembros.vue'
 
 export default {
     name: 'Sobre',

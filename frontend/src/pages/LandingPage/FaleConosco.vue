@@ -2,7 +2,7 @@
     <div>
         <head>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-            <link rel="icon" href="./images/Unificado1.png">
+            <!-- <link rel="icon" href="./images/Unificado1.png"> -->
             <title>Fale Conosco</title>
         </head>
         <body>
@@ -16,11 +16,11 @@
                             <div style="width: 55vw; display: grid; grid-template-columns: 50% 50%;">
                             <div class="fale_conosco_component">
                                 <p>Nome:</p>
-                                <input name="FaleConoscoNome" type="text" placeholder="ex: Fernando"/>
+                                <input name="FaleConoscoNome" type="text" placeholder="ex: Luis Carlos"/>
                             </div>
                             <div class="fale_conosco_component">
                                 <p>Sobrenome:</p>
-                                <input name="FaleConoscoSobrenome" type="text" placeholder="ex: Zagatto Penha"/>
+                                <input name="FaleConoscoSobrenome" type="text" placeholder="ex: Gomes Rossi"/>
                             </div>
                             <div class="fale_conosco_component">
                                 <p>Instituição / Empresa:</p>
@@ -58,31 +58,31 @@
                             </div>
                             <div class="fale_conosco_topic">
                                 <i class="material-icons">phone</i>
-                                <p>(10) 98765-4321</p>
+                                <p>(xx) xxxx-xxxx</p>
                             </div>
                             <div class="fale_conosco_topic">
                                 <i class="material-icons">email</i>
-                                <p>fzpenha@gmail.com</p>
+                                <p>csguara@gmail.com</p>
                             </div>
                             <div class="fale_conosco_topic">
                                 <i class="material-icons">schedule</i>
                                 <p>08:00 às 18:00</p>
                             </div>
                         </div>
-                        <img style="display: flex; place-self: center; width: 80%; heigth: 80%;" src="../assets/FaleConosco_assets/mapa_localizacao.jpg" />
+                        <img style="display: flex; place-self: center; width: 80%; heigth: 80%;" src="../../assets/FaleConosco_assets/mapa_localizacao.jpg" />
                     </div>
                 </div>
                 <div class = "container_yellow">
                     <br>
                     <br>
                     <div style="display: grid; grid-template-columns: 100%; width: 100%; place-items: center;">
-                        <img src="../assets/FaleConosco_assets/logo CS.png" />
+                        <img src="../../assets/FaleConosco_assets/logo CS.png" />
                         <br>
                         <div style="display: flex; align-items: center; width: 20%; justify-content: space-between">
-                            <a href="https://www.linkedin.com/company/ieee-computer-society-guaratingueta/"><img src="../assets/FaleConosco_assets/linkedinIcon.png" /></a>
-                            <a href="https://www.instagram.com/cs_guara/"><img src="../assets/FaleConosco_assets/instagramIcon.png" /></a>
-                            <a href="https://www.facebook.com/CSGUARATINGUETA/"><img src="../assets/FaleConosco_assets/facebookIcon.png" /></a>
-                            <a href="https://www.youtube.com/channel/UCQbb5m7b-NdF8EX7Se6BANw"><img src="../assets/FaleConosco_assets/youtubeIcon.png" /></a>
+                            <a href="https://www.linkedin.com/company/ieee-computer-society-guaratingueta/"><img src="../../assets/FaleConosco_assets/linkedinIcon.png" /></a>
+                            <a href="https://www.instagram.com/cs_guara/"><img src="../../assets/FaleConosco_assets/instagramIcon.png" /></a>
+                            <a href="https://www.facebook.com/CSGUARATINGUETA/"><img src="../../assets/FaleConosco_assets/facebookIcon.png" /></a>
+                            <a href="https://www.youtube.com/channel/UCQbb5m7b-NdF8EX7Se6BANw"><img src="../../assets/FaleConosco_assets/youtubeIcon.png" /></a>
                         </div>
                     </div>
 
@@ -138,7 +138,7 @@ export default {
     }
 
     .imagem_de_fundo {
-        background-image: url('../assets/FaleConosco_assets/Intersect (forma amarela).png');
+        background-image: url('../../assets/FaleConosco_assets/Intersect (forma amarela).png');
         background-repeat: no-repeat;
         background-position: right;
         background-size: 40%
