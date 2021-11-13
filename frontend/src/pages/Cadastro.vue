@@ -9,8 +9,8 @@
                 <div class="login-card-inputs">
                     <input type="email" name="input-email" id="" placeholder="Email">
                     <input type="text" name="input-username" id="" placeholder="Nome de usuário">
-                    <input type="text" name="input-Senha" id="" placeholder="Senha">
-                    <input type="text" name="input-ConfirmarSenha" id="" placeholder="Confirmar senha">
+                    <input type="password" name="input-Senha" id="" placeholder="Senha">
+                    <input type="password" name="input-ConfirmarSenha" id="" placeholder="Confirmar senha">
                 </div>
                 <div class="login-card-button">
                     <router-link to="Login"><button v-on:click="enviar" class="home_sec1_btn">Enviar</button></router-link>

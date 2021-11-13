@@ -8,7 +8,7 @@
                 </div>
                 <div class="login-card-inputs">
                     <input type="email" name="input-email" id="" placeholder="Email">
-                    <input type="text" name="input-senha" id="" placeholder="Senha">
+                    <input type="password" name="input-senha" id="" placeholder="Senha">
                 </div>
                 <div class="login-card-button">
                     <button class="home_sec1_btn">Enviar</button>

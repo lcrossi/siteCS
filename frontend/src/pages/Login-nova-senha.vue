@@ -7,8 +7,8 @@
                     <p>Insira sua nova senha</p>
                 </div>
                 <div class="login-card-inputs">
-                    <input type="text" name="input-senha" id="" placeholder="Senha">
-                    <input type="text" name="input-confirmar-senha" id="" placeholder="Confirmar senha">
+                    <input type="password" name="input-senha" id="" placeholder="Senha">
+                    <input type="password" name="input-confirmar-senha" id="" placeholder="Confirmar senha">
                 </div>
                 <div class="login-card-button">
                     <button class="home_sec1_btn">Enviar</button>
