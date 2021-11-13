@@ -133,6 +133,9 @@ body{ /* prevents scroll bar */
     z-index: 2;
     box-shadow: 15px black;
     width: 100%;
+    /*position: fixed;
+    right: 0;
+    top:0;*/
 }
 
 .nav_lista{

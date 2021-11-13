@@ -116,10 +116,13 @@ export default {
     
     input, textArea {
         background-color: transparent;
+        padding: 4px 0px;
         border-color: transparent;
         border-bottom: 1.5px orange solid !important;
         width: inherit;
         color: #ffffff;
+        outline: none;
+        font-size: clamp(0.3rem,1.3vw,2rem) !important;
     }
 
     ::placeholder {
@@ -129,6 +132,11 @@ export default {
     .fale_conosco_component {
         width: 90%;
         padding-bottom: 10vh;
+    }
+    
+    .fale_conosco_component p {
+        margin-bottom: 0.5vh;
+        font-size: clamp(0.3rem,1.8vw,2rem) !important;
     }
 
     .intersectionImg {

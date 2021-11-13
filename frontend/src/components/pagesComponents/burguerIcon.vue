@@ -22,8 +22,8 @@
 
     .mobile_menu div{
         width: 32px;
-        height: 2px;
+        height: 3px;
         background: #ffff;
-        margin: 8px;
+        margin: 7px;
     }
 </style>

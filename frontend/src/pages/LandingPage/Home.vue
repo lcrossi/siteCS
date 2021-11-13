@@ -32,7 +32,7 @@
                 <div class = "container_white">
                 <br>
                 <div class = "linha_titulo"></div>
-                <div class = "titulo_proj">o que fazemos</div> 
+                <div class = "titulo_proj">O que fazemos</div> 
                         <div class="home_sec2_conteudo">
                             <div class="middle">
                                 <p>
@@ -113,6 +113,10 @@
         font-size: 28px;
         color: #FFFFFF;
         background-color: #F4DC74;
+    }
+
+    button:hover {
+        background-color: #f4dd74d0;
     }
 
     #sec_descricao{
